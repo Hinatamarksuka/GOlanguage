@@ -1,0 +1,31 @@
+package main
+
+import (
+    "fmt"
+)
+
+// Function to greet the user
+func greet(name string) string {
+    return "Hello, " + name + "!"
+}
+
+// Function to add two numbers
+func addNumbers(a, b float64) float64 {
+    return a + b
+}
+
+// Function to check if a number is even or odd
+func checkEvenOdd(number int) string {
+    if number%2 == 0 {
+        return "Even"
+    }
+    return "Odd"
+}
+
+// Main function
+func main() {
+    // Greeting the user
+    var name string
+    fmt.Print("Enter your name: ")
+    fmt.Scanln(&name)
+    fmt.Println(greet(name))
